@@ -70,13 +70,13 @@
     text-align: center;
     &-title{
         margin-bottom: 10px;
-        font-weight: 700;
+        @include f700;
         font-size: 48px; 
         line-height: 72px; 
     }
     &-text{
         margin-bottom: 50px;
-        font-weight: 500;
+        @include f500;
         font-style: 20px;
         line-height: 30px;
     }
@@ -93,12 +93,12 @@
             height: 56px;
             border: none;
             font-size: 14px;
-            font-weight: 500;
+            @include f500;
             padding-left: 25px;
             padding-right: 60px;
             &::placeholder{
                 color: #90a4ae;
-                font-weight: 500;
+                @include f500;
             }
         }
         button{
@@ -162,7 +162,7 @@
         padding: 10px 30px;
         min-height: 90px;
         align-items: center;
-        font-weight: 500;
+        @include f500;
         border-bottom: 1px solid #e7ecf2;
     }
     &-name{
@@ -180,7 +180,7 @@
     }
     &-price{
         font-size: 20px;
-        font-weight: 700;
+        @include f700;
         color: $bg;
     }
     &-info{
@@ -205,7 +205,7 @@
         }
         span{
             font-size: 14px;
-            font-weight: 50;
+            @include f500;
         }
     }
     &-star{
@@ -264,20 +264,78 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // ====================== end slider ======================
+
+// ====================== start slider ======================
+
+.advantages{
+    background-color: $bg;
+    padding: 110px 0px;
+}
+.advantages__title{
+    color: #fff;
+}
+
+.advantages__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.advantages__item{
+    max-width: 370px;
+    text-align: center;
+    padding: 0 15px;
+    &:hover{
+        .advantages__item-images{
+            background-color: $green;
+        }
+        .advantages__item-title{
+            color: $green;
+        }
+        .advantages__item-images{
+            g{
+              fill: #fff;
+            }
+        }
+    }
+    &-images{
+        width: 114px;
+        height: 114px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 30px;
+        transition: all .3s;
+    }
+    &-title{
+        font-size: 24px;
+        color: #fff;
+        @include f500;
+        margin-bottom: 25px;
+        transition: all .3s;
+    }
+    &-text{
+        font-size: 15px;
+    }
+}
+.iconsvg-1{
+    svg{
+        width: 50px;
+    }
+}
+.iconsvg-2{
+    svg{
+       width: 70px; 
+    }
+}
+.iconsvg-3{
+    svg{
+      width: 86px;  
+    }
+}
+
+
+
+
+// ====================== end products ======================
