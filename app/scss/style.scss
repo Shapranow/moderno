@@ -306,7 +306,10 @@
         justify-content: center;
         align-items: center;
         margin: 0 auto 30px;
-        transition: all .3s;
+        transition: all .5s;
+        g{
+            transition: all .3s;
+        }
     }
     &-title{
         font-size: 24px;
@@ -326,16 +329,51 @@
 }
 .iconsvg-2{
     svg{
-       width: 70px; 
+       width: 70px;
     }
 }
 .iconsvg-3{
     svg{
-      width: 86px;  
+      width: 86px;
+    }
+}
+// ====================== end products ======================
+
+// ====================== start author ======================
+.author{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 750px;
+    display: flex;
+    align-items: center;
+    &__box{
+    margin: 0 auto;
+    max-width: 650px;
+    width: 100%;
+    min-height: 215px;
+    background-color: $green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    &__title{
+        font-size: 30px;
+        line-height: 36px;
+        color: #fff;
+        margin-right: 45px;
+        max-width: 265px;
+        span{
+            @include f700
+        }
+    }
+    &__link{
+        font-size: 18px;
+        line-height: 36px;
+        
+        padding: 14px 40px;
+        background-color: #fff;
     }
 }
 
-
-
-
-// ====================== end products ======================
+// ====================== end author ======================
