@@ -1,0 +1,242 @@
+
+
+@media (max-width: 1150px){
+   .header__text{
+       display: none;
+   }
+    .footer__inner{
+        flex-wrap: wrap;
+        padding-top: 20px;
+        }
+    .footer__col-adress{
+        min-width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (max-width: 900px){
+    .footer__inner{
+       justify-content: flex-start;
+    }
+    .footer__col-menu{
+        & + &{
+            margin-left: 40px;
+        }
+    }
+    .footer__col-social{
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 840px){
+    .header{
+        position: relative;
+    }
+    .header__top-inner{
+        height: 75px;
+    }
+    .circle__menu{
+        top: 54px;
+    }
+    .user__menu{
+        top: 61px;
+    }
+
+    .header__logo{
+        margin-left: 60px;
+       
+    }
+    .header__menu{
+        .menu{
+            height: auto; 
+        } 
+    }
+    .menu__list{
+        display: none;
+        margin-right: auto;
+        padding: 20px 0px;
+        li{
+            display: block;
+            & + li{
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+        a{
+            font-size: 16px;
+        }  
+    }
+   .menu__btn{   
+        display: block;
+        width: 40px;
+        position: absolute;
+        top: 27px;
+       div{
+           background-color: $bg;
+           height: 3px;
+           cursor: pointer;
+           & + div{
+               margin-top: 5px;
+           }
+       }
+   }
+}
+
+@media (max-width: 740px){ 
+   
+    .header__box{
+        flex-direction: column;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        background-color: #fff;
+        transition: all .5s;
+        transform:translateX(250%);
+        position: absolute;
+        right: 0px;
+        top: 74px;
+        z-index: 1;
+        &.active{
+           transform: translateX(0%);
+        }
+    }
+    .basket__box, 
+    .message__box, 
+    .notification__box{
+        height: 40px;
+        margin-top: 0;
+        padding-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 0;
+        right: 15px;
+    }
+    .basket{
+        margin-right: 0;
+    }
+    .user__box{
+        margin-top: 10px;
+        height: 20px
+    }
+    .user{
+        margin-left: 20px;
+        }
+    .user__menu{
+        top: 50px;
+        left: -30px;
+    }
+    .circle__menu{
+        top: 24px;
+        right: 37px;
+    }
+    .header__btn{
+        margin: 10px 10px;
+    }
+    .circle__item{
+        width: 250px;
+    }
+     .header__btn-menu{
+        display: block;
+        padding: 28px;
+        border-radius: 50%;
+        background-color: $green;
+        right: 0px;
+        position: relative;
+        z-index: 5;
+        &::before{
+            position: absolute;
+            color: $bg;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 26px;
+        }
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 540px){
+    .footer__col{
+        min-width: 100%;
+        margin-bottom: 40px;
+    }
+    .footer__col-menu{
+        & + &{
+            margin-left: 0px;
+            margin-top: 30px;
+        }
+    }
+    .footer__inner{
+        padding-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 520px){
+    // .header__btn-menu{
+    //     display: block;
+    //     padding: 30px;
+    //     border-radius: 50%;
+    //     background-color: $green;
+    //     right: 18px;
+    //     position: relative;
+    //     &::before{
+    //         position: absolute;
+    //         color: $bg;
+    //         top: 50%;
+    //         left: 50%;
+    //         transform: translate(-50%, -50%);
+    //         font-size: 27px;
+    //     }
+    // }
+    // .header__box{
+    //     transition: all .5s;
+    //     transform: translateX(150%);
+    //     &.active{
+    //        transform: translateX(0%); 
+    //     }
+    // }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 841px){
+   .menu__list{
+       display: block !important;
+   }
+}
