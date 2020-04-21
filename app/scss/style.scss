@@ -1694,7 +1694,8 @@
     margin-bottom: 150px;
     color: #fff;
 }
-.page-404__head{
+.page-404__head,
+.about__head{
     padding: 23px 27px 23px;
     background-color: #fff;
     font-size: 24px;
@@ -1751,10 +1752,30 @@
     color: #fff;
 }
 
-
-
-
 // ====================== end page-404 ======================
+// ====================== start about ======================
+.about__wrapper{
+    border: 1px solid #cdd4c4;
+    background-color: #fff;
+}
+.about__inner{
+    padding: 20px 50px 0px 50px;
+}
+.about__title{
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #444444;
+    @include f700;
+}
+.about__text{
+    font-size: 15px;
+    line-height: 24px;
+    color: #707070;
+    margin-bottom: 45px;
+}
+
+// ====================== end about ======================
 
 
 
