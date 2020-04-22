@@ -1689,15 +1689,20 @@
 // ====================== end product-one ======================
 // ====================== start page-404 ======================
 
-.page-404__wrapper{
+.page-404__wrapper,
+.contacts__wrapper,
+.about__wrapper{
     border: 1px solid #cdd4c4;
     margin-bottom: 150px;
-    color: #fff;
+    background-color: #fff;
+    
 }
 .page-404__head,
-.about__head{
+.about__head,
+.contacts__head{
     padding: 23px 27px 23px;
     background-color: #fff;
+    color: #fff;
     font-size: 24px;
     line-height: 24px;
     color: $bg;
@@ -1754,10 +1759,7 @@
 
 // ====================== end page-404 ======================
 // ====================== start about ======================
-.about__wrapper{
-    border: 1px solid #cdd4c4;
-    background-color: #fff;
-}
+
 .about__inner{
     padding: 20px 50px 0px 50px;
 }
@@ -1774,10 +1776,135 @@
     color: #707070;
     margin-bottom: 45px;
 }
+// ====================== end contacts ======================
+// ====================== start contacts ====================
+.contacts__head{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.contacts__inner{
+    padding: 35px 40px 15px;
+}
+.contacts__map{
+    margin-bottom: 50px;
+    iframe{
+        width: 100%;
+        height: 415px;
+    }
+}
+.contacts__box{
+    display: flex;
+}
+.contacts__info{
+    margin-right: 30px;
+    max-width: 300px;
+    width: 100%;
+}
+.contacts__info-item{
+margin-bottom: 30px;
+}
+.contacts__info-title{
+    font-size: 20px;
+    line-height: 24px;
+    @include f500;
+    font-family: 'Roboto-Regular', sans-serif !important;
+    color: $bg;
+    padding-bottom: 20px;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    &::after{
+        content: '';
+        position: absolute;
+        background-color: $green;
+        width: 44px;
+        height: 4px;
+        left: 40px;
+        bottom: 0;
+    }
+    &::before{
+        position: absolute;
+        font-family: 'icomoon';
+        color: $green;
+        font-style: 24px;
+        left: 0;
+    }    
+}
+.contacts__info-content{
+    font-size: 15px;
+    line-height: 24px;
+    color: #707070;
+    
+    padding-left: 40px;
+}
+.contacts__form-title{
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 24px;
+    @include f500;
+    color: #333333;
+}
+.contacts__form{
+    width: 100%;
+    padding-left: 30px;
+    input{
+        max-width: 350px;
+        width: 100%;
+        height: 40px;
+        border: none;
+        background-color: #f1f4f5;
+        color: #7a7a7a;
+        padding: 0 17px;
+        &::placeholder{
+            font-size: 15px;
+            color: #7a7a7a;
+        }
+        & + input{
+            margin-left: 10px;
+        }
+    }
+    textarea{
+        width: 100%;
+        display: block;
+        min-height: 190px;
+        padding-left: 17px;
+        padding: 13px 17px;
+        margin-bottom: 20px;
+        border: none;
+        font-size: 15px;
+        color: #7a7a7a;
+        background-color: #f1f4f5;
+        resize: none;
+        &::placeholder{
+            font-size: 15px;
+            color: #7a7a7a;
+        }
+    }
+    button{
+        width: 190px;
+        border: none;
+        padding: 17px 5px;
+        background-color: $green;
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        @include f700;
+    }
+}
+.contacts__form-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
 
-// ====================== end about ======================
 
 
 
-// ====================== media ======================
+
+
+
+
+
+// ====================== end contacts ====================
+// ====================== media ==============================
 @import 'media';
