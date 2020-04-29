@@ -2251,9 +2251,6 @@ margin-bottom: 30px;
             color: $green;
             font-size: 24px;
         }
-        &::placeholder{
-            color: #707070;
-        }
     }
     input,
     select,
@@ -2264,6 +2261,9 @@ margin-bottom: 30px;
         background-color: #f9f9f9;
         border: 1px solid #d7d7d7;
         padding: 0px 18px;
+        &::placeholder{
+            color: #707070;
+        }
     }
     input[type="file"]{
         outline: none;
@@ -2349,13 +2349,149 @@ margin-bottom: 30px;
     }
 }
 // ====================== end upload ======================
-// ====================== start upload =====================
+// ====================== start withdrawal =====================
+.withdrawal__content{
+    padding: 0 39px;
+}
+.withdrawal__inner{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 145px;
+}
+.withdrawal__col{
+    max-width: 570px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #d7d7d7;
+    background-color: #fff;
+}
+.withdrawal__title{
+    font-size: 24px;
+    @include f500;
+    color: $bg;
+    padding: 18px 32px 24px;
+    border-bottom: 1px solid #d7d7d7;
+}
+.withdrawal__content-form{
+    padding: 29px 0px 48px;
+    button{
+        margin-top: 8px;
+        background-color: $green;
+        padding: 14px 28px;
+        color: #fff;
+        @include f700;
+        font-size: 16px;
+        line-height: 24px;
+        border: none;
+        cursor: pointer;
+    }
+}
+.withdrawal__line{
+    margin-bottom: 30px;
+    label{
+        display: block;
+        margin-bottom: 21px;
+        font-size: 16px;
+        color: $bg;
+        @include f500;
+        span{
+            color: $green;
+            font-size: 24px;
+        }
+    }
+    input{
+        display: block;
+        width: 100%;
+        height: 40px;
+        border: 1px solid #d7d7d7;
+        padding: 0px 18px;
+        background-color: #f9f9f9;
+        &::placeholder{
+            color: #707070;
+        }
+    }
+    .jq-selectbox.jqselect{
+        width: 100%;
+    }
+    .jq-selectbox__select {
+        height: 40px;
+        font-family: 'Roboto-Regular', sans-serif;
+        padding: 0 45px 0 18px;
+        border: 1px solid #d7d7d7;
+        border-bottom-color: #d7d7d7;
+        border-radius: 0px;
+        background: #f9f9f9;
+        box-shadow: none;
+        font-size: 15px;
+        line-height: 38px;
+        color: #707070;
+        text-shadow: none;
+    }
+    .jq-selectbox__trigger{
+        border: none;
+        top: 3px;
+    }
+    .jq-selectbox__trigger-arrow{
+        border:none;
+        top: -3px;
+        line-height: 40px;
+        right: 20px;
+        font-size: 15px;
+        &::before{
+            content: "\f0d7";
+            font-family: 'icomoon';
+        }
+    }
+    .jq-selectbox li{
+        padding: 0px 18px;
+        line-height: 40px;
+    }
+    .jq-selectbox__dropdown{
+        border-radius: 0px;
+        margin: auto;
+    }
+}
+.withdrawal__content-items{
+    padding: 38px 0px 20px;
+    
+}
+.withdrawal__content-item{
+    display: flex;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    height: 42px;
+    align-items: center;
+    &:nth-child(odd){
+        background-color: #f9f9f9;
+    }
+}
+.withdrawal__content-item{
+    display: flex;
+    font-size: 13px;
+    color: #444444;
+}
+.withdrawal__content-email{
+    width: 170px;
+}
+.withdrawal__content-date{
+    @include f500;
+    width: 137px;
+}
+.withdrawal__content-price{
+    @include f700;
+    width: 70px;
+}
+.withdrawal__content-pending-status{
+    @include f700;
+    width: 88px;
+    &.withdrawal__content-pending-paid{
+        color: $green;
+    }
+}
 
+  
 
-
-
-
-// ====================== end profile ======================
+// ====================== end withdrawal ======================
 
 // ====================== media ===========================
 @import 'media';
