@@ -58,7 +58,7 @@ $(function(){
         return false;
     })
 
-
+    $('input[type="file"], select').styler();
 
 $('.header__btn-menu').on('click', function(){
         $('.header__box').toggleClass('active');
