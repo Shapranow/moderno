@@ -13,8 +13,37 @@ $(function(){
         slidesToScroll: 4,
         arrows: false,
         dots: true,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 1900,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 1441,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 681,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+        ]
     });
 
     $(".js-range-slider").ionRangeSlider({
